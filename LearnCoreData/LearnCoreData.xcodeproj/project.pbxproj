@@ -23,6 +23,10 @@
 		B04503CE2278AD4900D0BD90 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04503C72278AD4900D0BD90 /* SwiftyJSON.swift */; };
 		B04503D02278AD6C00D0BD90 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04503CF2278AD6C00D0BD90 /* CoreDataStack.swift */; };
 		B04503D42278BB4F00D0BD90 /* People+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04503D32278BB4F00D0BD90 /* People+CoreDataProperties.swift */; };
+		B063905A22796CB60066A7D7 /* Planet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063905622796CB60066A7D7 /* Planet+CoreDataClass.swift */; };
+		B063905B22796CB60066A7D7 /* Planet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063905722796CB60066A7D7 /* Planet+CoreDataProperties.swift */; };
+		B063905C22796CB60066A7D7 /* Specie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063905822796CB60066A7D7 /* Specie+CoreDataClass.swift */; };
+		B063905D22796CB60066A7D7 /* Specie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063905922796CB60066A7D7 /* Specie+CoreDataProperties.swift */; };
 		B0C88E522278329100C97A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88E512278329100C97A0A /* AppDelegate.swift */; };
 		B0C88E542278329100C97A0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88E532278329100C97A0A /* ViewController.swift */; };
 		B0C88E572278329100C97A0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C88E552278329100C97A0A /* Main.storyboard */; };
@@ -48,6 +52,10 @@
 		B04503C72278AD4900D0BD90 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		B04503CF2278AD6C00D0BD90 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		B04503D32278BB4F00D0BD90 /* People+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "People+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B063905622796CB60066A7D7 /* Planet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B063905722796CB60066A7D7 /* Planet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B063905822796CB60066A7D7 /* Specie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Specie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B063905922796CB60066A7D7 /* Specie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Specie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B0C88E4E2278329100C97A0A /* LearnCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C88E512278329100C97A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C88E532278329100C97A0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,14 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				B04503CF2278AD6C00D0BD90 /* CoreDataStack.swift */,
-				B04503B32278A44300D0BD90 /* AbstractVehicle+CoreDataClass.swift */,
-				B04503B42278A44300D0BD90 /* AbstractVehicle+CoreDataProperties.swift */,
-				B04503B12278A44300D0BD90 /* People+CoreDataClass.swift */,
-				B04503D32278BB4F00D0BD90 /* People+CoreDataProperties.swift */,
-				B04503AF2278A44300D0BD90 /* Starship+CoreDataClass.swift */,
-				B04503B02278A44300D0BD90 /* Starship+CoreDataProperties.swift */,
-				B04503B52278A44300D0BD90 /* Vehicle+CoreDataClass.swift */,
-				B04503B62278A44300D0BD90 /* Vehicle+CoreDataProperties.swift */,
+				B0C88E582278329100C97A0A /* LearnCoreData.xcdatamodeld */,
+				B0639055227967A80066A7D7 /* Model */,
 			);
 			name = CoreData;
 			path = ../CoreData;
@@ -98,6 +100,25 @@
 				B04503C72278AD4900D0BD90 /* SwiftyJSON.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B0639055227967A80066A7D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B063905622796CB60066A7D7 /* Planet+CoreDataClass.swift */,
+				B063905722796CB60066A7D7 /* Planet+CoreDataProperties.swift */,
+				B063905822796CB60066A7D7 /* Specie+CoreDataClass.swift */,
+				B063905922796CB60066A7D7 /* Specie+CoreDataProperties.swift */,
+				B04503B32278A44300D0BD90 /* AbstractVehicle+CoreDataClass.swift */,
+				B04503B42278A44300D0BD90 /* AbstractVehicle+CoreDataProperties.swift */,
+				B04503B12278A44300D0BD90 /* People+CoreDataClass.swift */,
+				B04503D32278BB4F00D0BD90 /* People+CoreDataProperties.swift */,
+				B04503AF2278A44300D0BD90 /* Starship+CoreDataClass.swift */,
+				B04503B02278A44300D0BD90 /* Starship+CoreDataProperties.swift */,
+				B04503B52278A44300D0BD90 /* Vehicle+CoreDataClass.swift */,
+				B04503B62278A44300D0BD90 /* Vehicle+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B0C88E452278329100C97A0A = {
@@ -127,7 +148,6 @@
 				B0C88E5B2278329100C97A0A /* Assets.xcassets */,
 				B0C88E5D2278329100C97A0A /* LaunchScreen.storyboard */,
 				B0C88E602278329100C97A0A /* Info.plist */,
-				B0C88E582278329100C97A0A /* LearnCoreData.xcdatamodeld */,
 			);
 			path = LearnCoreData;
 			sourceTree = "<group>";
@@ -203,12 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B063905B22796CB60066A7D7 /* Planet+CoreDataProperties.swift in Sources */,
 				B04503B92278A44300D0BD90 /* People+CoreDataClass.swift in Sources */,
+				B063905A22796CB60066A7D7 /* Planet+CoreDataClass.swift in Sources */,
 				B04503B82278A44300D0BD90 /* Starship+CoreDataProperties.swift in Sources */,
 				B04503BC2278A44300D0BD90 /* AbstractVehicle+CoreDataProperties.swift in Sources */,
 				B04503CC2278AD4900D0BD90 /* Errors.swift in Sources */,
 				B04503CD2278AD4900D0BD90 /* DateFormatters.swift in Sources */,
 				B0C88E542278329100C97A0A /* ViewController.swift in Sources */,
+				B063905C22796CB60066A7D7 /* Specie+CoreDataClass.swift in Sources */,
 				B04503D42278BB4F00D0BD90 /* People+CoreDataProperties.swift in Sources */,
 				B04503C92278AD4900D0BD90 /* SWAPI.swift in Sources */,
 				B04503D02278AD6C00D0BD90 /* CoreDataStack.swift in Sources */,
@@ -221,6 +244,7 @@
 				B04503CB2278AD4900D0BD90 /* StringExtensions.swift in Sources */,
 				B04503CE2278AD4900D0BD90 /* SwiftyJSON.swift in Sources */,
 				B04503BB2278A44300D0BD90 /* AbstractVehicle+CoreDataClass.swift in Sources */,
+				B063905D22796CB60066A7D7 /* Specie+CoreDataProperties.swift in Sources */,
 				B0C88E522278329100C97A0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

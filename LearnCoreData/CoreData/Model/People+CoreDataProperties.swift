@@ -2,7 +2,7 @@
 //  People+CoreDataProperties.swift
 //  LearnCoreData
 //
-//  Created by Maksim Nosov on 30/04/2019.
+//  Created by Maksim Nosov on 01/05/2019.
 //  Copyright © 2019 Maksim Nosov. All rights reserved.
 //
 //
@@ -28,13 +28,18 @@ extension People {
     @NSManaged public var homeworldId: Int16
     @NSManaged public var id: Int16
     @NSManaged public var mass: Int16
+    @NSManaged public var name: String?
     @NSManaged public var skinColor: String?
     @NSManaged public var specieIds: [Int]?
     @NSManaged public var starshipIds: [Int]?
     @NSManaged public var vehicleIds: [Int]?
-    @NSManaged public var name: String?
+    @NSManaged public var attribute: NSObject?
+    @NSManaged public var attribute1: NSObject?
+    @NSManaged public var attribute2: NSObject?
     @NSManaged public var starships: NSSet?
     @NSManaged public var vehicles: NSSet?
+    @NSManaged public var homeworld: Planet?
+    @NSManaged public var species: NSSet?
 
 }
 
@@ -69,5 +74,22 @@ extension People {
 
     @objc(removeVehicles:)
     @NSManaged public func removeFromVehicles(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for species
+extension People {
+
+    @objc(addSpeciesObject:)
+    @NSManaged public func addToSpecies(_ value: Specie)
+
+    @objc(removeSpeciesObject:)
+    @NSManaged public func removeFromSpecies(_ value: Specie)
+
+    @objc(addSpecies:)
+    @NSManaged public func addToSpecies(_ values: NSSet)
+
+    @objc(removeSpecies:)
+    @NSManaged public func removeFromSpecies(_ values: NSSet)
 
 }

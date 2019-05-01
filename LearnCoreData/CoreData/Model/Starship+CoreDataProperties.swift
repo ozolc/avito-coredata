@@ -1,8 +1,8 @@
 //
-//  Vehicle+CoreDataProperties.swift
+//  Starship+CoreDataProperties.swift
 //  LearnCoreData
 //
-//  Created by Maksim Nosov on 30/04/2019.
+//  Created by Maksim Nosov on 01/05/2019.
 //  Copyright © 2019 Maksim Nosov. All rights reserved.
 //
 //
@@ -11,19 +11,21 @@ import Foundation
 import CoreData
 
 
-extension Vehicle {
+extension Starship {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Vehicle> {
-        return NSFetchRequest<Vehicle>(entityName: "Vehicle")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Starship> {
+        return NSFetchRequest<Starship>(entityName: "Starship")
     }
 
-    @NSManaged public var vehicleClass: String?
+    @NSManaged public var hyperdriveRating: Float
+    @NSManaged public var mglt: Int16
+    @NSManaged public var starshipClass: String?
     @NSManaged public var pilots: NSSet?
 
 }
 
 // MARK: Generated accessors for pilots
-extension Vehicle {
+extension Starship {
 
     @objc(addPilotsObject:)
     @NSManaged public func addToPilots(_ value: People)
