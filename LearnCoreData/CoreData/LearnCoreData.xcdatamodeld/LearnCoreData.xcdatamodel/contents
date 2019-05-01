@@ -7,7 +7,7 @@
         <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="crew" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="edited" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="filmId" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="filmIds" attributeType="Transformable" customClassName="[Int]" syncable="YES"/>
         <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="length" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="manufacturer" attributeType="String" syncable="YES"/>
@@ -15,7 +15,7 @@
         <attribute name="model" attributeType="String" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="passengers" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="pilotids" attributeType="Transformable" valueTransformerName="" customClassName="[Int]" syncable="YES"/>
+        <attribute name="pilotIds" attributeType="Transformable" valueTransformerName="" customClassName="[Int]" syncable="YES"/>
     </entity>
     <entity name="People" representedClassName="People" syncable="YES">
         <attribute name="birthYear" attributeType="String" syncable="YES"/>
@@ -86,7 +86,7 @@
         <relationship name="pilots" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="People" inverseName="vehicles" inverseEntity="People" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AbstractVehicle" positionX="-176.7421875" positionY="208.57421875" width="128" height="268"/>
+        <element name="AbstractVehicle" positionX="-176.7421875" positionY="208.57421875" width="128" height="270"/>
         <element name="People" positionX="-388.875" positionY="138.30078125" width="128" height="345"/>
         <element name="Planet" positionX="-552.84375" positionY="47.97265625" width="128" height="270"/>
         <element name="Specie" positionX="-725.93359375" positionY="319.7109375" width="128" height="300"/>

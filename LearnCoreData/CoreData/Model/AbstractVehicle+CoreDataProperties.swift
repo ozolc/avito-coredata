@@ -23,7 +23,7 @@ extension AbstractVehicle {
     @NSManaged public var created: NSDate?
     @NSManaged public var crew: Int64
     @NSManaged public var edited: NSDate?
-    @NSManaged public var filmId: Int16
+    @NSManaged public var filmIds: [Int]?
     @NSManaged public var id: Int16
     @NSManaged public var length: Float
     @NSManaged public var manufacturer: String?
@@ -31,6 +31,6 @@ extension AbstractVehicle {
     @NSManaged public var model: String?
     @NSManaged public var name: String?
     @NSManaged public var passengers: Int64
-    @NSManaged public var pilotids: [Int]?
+    @NSManaged public var pilotIds: [Int]?
 
 }

@@ -33,13 +33,27 @@ extension People {
     @NSManaged public var specieIds: [Int]?
     @NSManaged public var starshipIds: [Int]?
     @NSManaged public var vehicleIds: [Int]?
-    @NSManaged public var attribute: NSObject?
-    @NSManaged public var attribute1: NSObject?
-    @NSManaged public var attribute2: NSObject?
-    @NSManaged public var starships: NSSet?
-    @NSManaged public var vehicles: NSSet?
     @NSManaged public var homeworld: Planet?
     @NSManaged public var species: NSSet?
+    @NSManaged public var starships: NSSet?
+    @NSManaged public var vehicles: NSSet?
+
+}
+
+// MARK: Generated accessors for species
+extension People {
+
+    @objc(addSpeciesObject:)
+    @NSManaged public func addToSpecies(_ value: Specie)
+
+    @objc(removeSpeciesObject:)
+    @NSManaged public func removeFromSpecies(_ value: Specie)
+
+    @objc(addSpecies:)
+    @NSManaged public func addToSpecies(_ values: NSSet)
+
+    @objc(removeSpecies:)
+    @NSManaged public func removeFromSpecies(_ values: NSSet)
 
 }
 
@@ -74,22 +88,5 @@ extension People {
 
     @objc(removeVehicles:)
     @NSManaged public func removeFromVehicles(_ values: NSSet)
-
-}
-
-// MARK: Generated accessors for species
-extension People {
-
-    @objc(addSpeciesObject:)
-    @NSManaged public func addToSpecies(_ value: Specie)
-
-    @objc(removeSpeciesObject:)
-    @NSManaged public func removeFromSpecies(_ value: Specie)
-
-    @objc(addSpecies:)
-    @NSManaged public func addToSpecies(_ values: NSSet)
-
-    @objc(removeSpecies:)
-    @NSManaged public func removeFromSpecies(_ values: NSSet)
 
 }

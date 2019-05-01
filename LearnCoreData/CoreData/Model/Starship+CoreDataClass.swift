@@ -12,5 +12,5 @@ import CoreData
 
 @objc(Starship)
 public class Starship: AbstractVehicle {
-
-}
+    
+    }
